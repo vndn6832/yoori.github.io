@@ -1,0 +1,7 @@
+<form action="/posts/update/<%= @post.id %>" method="post">
+    <p>제목</p>
+    <input type="text" name="post_title" value="<%=@post.title%>">
+    <p>내용</p>
+    <input type="text" name="post_content" value="<%=@post.content%>">
+    <input type="submit" value="수정하기">
+</form>
